@@ -34,10 +34,10 @@ Workflow of the project:
     kubectl apply -f jokeapp-green/service.yaml
 8. Check the service list to see the link to the deployed apps:
     minikube service list
-9. Now to redirect the traffic from blue to green, edit the service file and update the selector to jokeapp-green: 
-    selector: 
-      app: jokeapp-green
-10 Refresh the blue page to see the update
+9. Now to redirect the traffic from blue to green, edit the service file and update the selector to jokeapp-green: <br>
+    selector: <br>
+      app: jokeapp-green <br>
+10. Refresh the blue page to see the update
 
 # Installation: By using Jenkins and Argo (Automation)
 
