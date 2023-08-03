@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jokeapp-green-service
+  labels:
+    app: jokeapp-green
+spec:
+  ports:
+    - protocol: TCP
+      port: 8010
+      targetPort: 8001
+  selector:
+    app: jokeapp-green
+  type: NodePort

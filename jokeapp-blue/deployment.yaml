@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jokeapp-blue-deployment
+  labels:
+    app: jokeapp-blue
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: jokeapp-blue
+  template:
+    metadata:
+      labels:
+        app: jokeapp-blue
+    spec:
+      containers:
+        - name: jokeapp-blue
+          image: ebinvarghese/jokeapp-blue 
+          ports:
+            - containerPort: 8001
