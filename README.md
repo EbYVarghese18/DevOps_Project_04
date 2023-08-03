@@ -36,7 +36,7 @@ Workflow of the project:
     minikube service list
 9. Now to redirect the traffic from blue to green, edit the service file and update the selector to jokeapp-green: <br>
     selector: <br>
-      app: jokeapp-green <br>
+    &nbsp;&nbsp;app: jokeapp-green <br>
 10. Refresh the blue page to see the update
 
 # Installation: By using Jenkins and Argo (Automation)
@@ -48,9 +48,9 @@ Workflow of the project:
     image for jokeapp-blue and jokeapp-green will be created 
     The image will be pushed to the dockerhub 
     The application will be deployed to k8s cluster by Argo
-5. Now to redirect the traffic from blue to green, update the service file with jokeapp-green selector:
-   selector: 
-    app: jokeapp-green
+5. Now to redirect the traffic from blue to green, update the service file with jokeapp-green selector: <br>
+    selector: <br>
+    &nbsp;&nbsp;app: jokeapp-green <br>
 6. Refresh the live site's page and see the update
 
 # Notes:
