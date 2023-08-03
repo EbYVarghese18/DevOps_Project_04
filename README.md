@@ -29,7 +29,7 @@ Workflow of the project:
 6. Deploy the blue app: 
     kubectl apply -f jokeapp-blue/deployment.yaml 
     kubectl apply -f jokeapp-blue/service.yaml
-7 Deploy the green app: 
+7. Deploy the green app: 
     kubectl apply -f jokeapp-green/deployment.yaml 
     kubectl apply -f jokeapp-green/service.yaml
 8. Check the service list to see the link to the deployed apps:
